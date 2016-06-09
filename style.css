@@ -1,0 +1,65 @@
+#menu-down {
+position:fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000000;
+  text-transform: uppercase;
+  background: #dddddd;
+border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  padding: 0px 15px 0px 15px;
+  width: 170px;
+-webkit-transition: max-height, opacity, overflow .3s ease-in-out .3s;
+     -moz-transition: max-height, opacity, overflow .3s ease-in-out .3s;
+     -o-transition: max-height,opacity,overflow .3s ease-in-out .3s;
+     transition: max-height,opacity,overflow .3s ease-in-out .3s;
+_display: block;
+_max-height: 200px;
+    opacity: 1;
+_overflow: hidden;   
+}
+
+#dropdown-menup  {
+opacity: 0;
+    max-height: 0;
+  width: 170px;
+    _overflow: hidden;
+text-transform: uppercase;
+/*-webkit-transition: all .3s ease-in-out .3s;
+-moz-transition: all .3s ease-in-out .3s;
+-o-transition: all .3s ease-in-out .3s;
+transition: all .3s ease-in-out .3s;
+_display: none; */
+}
+#dropdown-menu  {
+opacity: 0;
+    max-height: 0;
+  width: 170px;
+    _overflow: hidden;
+text-transform: uppercase;
+
+}
+
+
+#hidd {display: none;
+}
+#active {display: block;
+}
+#vis {_visibility: visible;
+opacity: 1;
+-webkit-transition: all .1s ease-in-out .1s;
+-moz-transition: all .1s ease-in-out .1s;
+-o-transition: all .1s ease-in-out .1s;
+transition: all .1s ease-in-out .1s; }
+#hid {_visibility: hidden; 
+opacity: 0;
+-webkit-transition: all .1s ease-in-out .1s;
+-moz-transition: all .1s ease-in-out .1s;
+-o-transition: all .1s ease-in-out .1s;
+transition: all .1s ease-in-out .1s;}
+
+
+li {list-style-type: none;}
+li:hover {color: blue;background: yellow;}
+
+ul li:hover > ul li > a::before {display: block; z-index:100}      
